@@ -11,7 +11,7 @@ function getGalleryTopics(params) {
 			AND t.id = ? \
 			ORDER BY t.name DESC";
 
-    return Q.nfcall(db.query, sql, [params.topic_id]);
+    return Q.nfcall(db.query, sql, [params.topicId]);
 }
 
 module.exports = getGalleryTopics;
