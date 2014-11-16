@@ -59,6 +59,7 @@ module.exports.repositories = {
 	getTopic: require("./repositories/topic/getTopic.js"),
     getTopics: require("./repositories/topic/getTopics.js"),
 	getGalleryTopics: require("./repositories/topic/getGalleryTopics.js"),
+	getGallerySessionsPerTopic: require("./repositories/topic/getGallerySessionsPerTopic.js"),
 	updateTopic: require("./repositories/topic/updateTopic.js"),
 
     getUserLogin: require("./repositories/userLogin/getUserLogin.js"),
