@@ -3,7 +3,7 @@ var Q = require('q');
 
 function getTopic(params) {
 	var sql = "SELECT * FROM topics WHERE id = ?";
-	return Q.nfcall(db.queryOne, sql, [params.topic_id]);
+	return Q.nfcall(db.queryOne, sql);
 }
 
 module.exports = getTopic;
