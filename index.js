@@ -85,5 +85,6 @@ module.exports.repositories = {
     createUserVotes: require("./repositories/vote/createUserVotes.js"),
     getUserVotes: require("./repositories/vote/getUserVotes.js"),
 
-	emailExists: require("./repositories/user/emailExists.js")
+	emailExists: require("./repositories/user/emailExists.js"),
+	addUsers: require("./repositories/user/addUsers.js")
 };
