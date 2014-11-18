@@ -26,7 +26,7 @@ function AddUsers(params, mainCb) {
 	var emailPasswordMap = {};
 	_.each(users, function (user) {
 		if (user.password)
-			emailPasswordMap[user.email || user.username] = user.password;
+			emailPasswordMap[user.email] = user.password;
 	});
 
 	_.each(users, function(user) {
@@ -45,9 +45,7 @@ function AddUsers(params, mainCb) {
 
 		_.each(insertRes, function (user) {
 			user = _.omit(user, "insertId");
-			//emailUsername = user.email || user.username;
 
-			// create a flat array for a simple upsert
 			if (emailPasswordMap[user.email]) {
 				user.passwordCrypt = ifCommon.utils.encryptPassword({
 					userId: user.id,
