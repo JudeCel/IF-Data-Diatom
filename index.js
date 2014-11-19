@@ -73,9 +73,10 @@ module.exports.repositories = {
     getClientCompanyLogo: require("./repositories/company/getClientCompanyLogo.js"),
     getClientCompanyInfo: require("./repositories/company/getClientCompanyInfo.js"),
 
-    getUser: require("./repositories/user/getUser.js"),
     updateUser: require("./repositories/user/updateUser.js"),
-
+    getUser: require("./repositories/user/getUser.js"),
+    getCountries: require("./repositories/user/getCountries.js"),
+    
     createLog: require("./repositories/log/createLog.js"),
 
     createVote: require("./repositories/vote/createVote.js"),
@@ -85,6 +86,6 @@ module.exports.repositories = {
     createUserVotes: require("./repositories/vote/createUserVotes.js"),
     getUserVotes: require("./repositories/vote/getUserVotes.js"),
 
-	emailExists: require("./repositories/user/emailExists.js"),
+	emailExists: require("./repositories/user/emaiLExists.js"),
 	addUsers: require("./repositories/user/addUsers.js")
 };
