@@ -41,8 +41,6 @@ function AddUsers(params, mainCb) {
 		if (_.keys(emailPasswordMap).length === 0)
 			return mainCb(null, insertRes);
 
-		//var emailUsername;
-
 		_.each(insertRes, function (user) {
 			user = _.omit(user, "insertId");
 
