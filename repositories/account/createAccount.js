@@ -1,5 +1,5 @@
 "use strict";
-var db = require('../..').db;
+var ifData = require('../..'), db = ifData.db;
 var Q = require('q');
 var _ = require('lodash');
 
