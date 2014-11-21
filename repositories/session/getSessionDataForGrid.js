@@ -12,7 +12,9 @@ function getSessionDataForGrid(params) {
         s.id As session_id, \
         u.name_last, \
         u.name_first, \
-        cc.name AS CompanyName \
+        cc.name AS CompanyName, \
+        s.id AS id, \
+        CONCAT(u.name_first, ' ', u.name_last) as facilitator \
     FROM sessions s \
     INNER JOIN brand_projects bp ON s.brand_project_id = bp.id \
     INNER JOIN session_staff ss ON s.id = ss.session_id \
