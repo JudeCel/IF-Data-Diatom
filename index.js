@@ -28,11 +28,15 @@ module.exports.repositories = {
 
     createSession: require("./repositories/session/createSession.js"),
     createSessionStaff: require("./repositories/session/createSessionStaff.js"),
+    getSession: require("./repositories/session/getSession.js"),
     getSessionPreferences: require("./repositories/session/getSessionPreferences.js"),
     getSessionStaffUserIds: require("./repositories/session/getSessionStaffUserIds.js"),
     getSessionDataForGrid: require("./repositories/session/getSessionDataForGrid.js"),
+    getSessionDataForGridV2: require("./repositories/session/getSessionDataForGridV2.js"),
     getSessionDataForGridByUser: require("./repositories/session/getSessionDataForGridByUser.js"),
     getSessionMod: require("./repositories/session/getSessionMod.js"),
+    deleteSession: require("./repositories/session/deleteSession.js"),
+    deleteSessionTopics: require("./repositories/session/deleteSessionTopics.js"),
 
     getAvatarInfo: require("./repositories/user/getAvatarInfo.js"),
 
@@ -57,6 +61,7 @@ module.exports.repositories = {
     deleteUserTmpResources: require("./repositories/resource/deleteUserTmpResources.js"),
 
 	getTopic: require("./repositories/topic/getTopic.js"),
+    createTopic: require("./repositories/topic/createTopic.js"),
     getTopics: require("./repositories/topic/getTopics.js"),
 	getGalleryTopics: require("./repositories/topic/getGalleryTopics.js"),
 	getGallerySessionsPerTopic: require("./repositories/topic/getGallerySessionsPerTopic.js"),
