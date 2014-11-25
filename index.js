@@ -32,7 +32,7 @@ module.exports.repositories = {
     getSessionPreferences: require("./repositories/session/getSessionPreferences.js"),
     getSessionStaffUserIds: require("./repositories/session/getSessionStaffUserIds.js"),
     getSessionDataForGrid: require("./repositories/session/getSessionDataForGrid.js"),
-    getSessionDataForGridV2: require("./repositories/session/getSessions.js"),
+	getSessions: require("./repositories/session/getSessions.js"),
     getSessionDataForGridByUser: require("./repositories/session/getSessionDataForGridByUser.js"),
     getSessionMod: require("./repositories/session/getSessionMod.js"),
     deleteSession: require("./repositories/session/deleteSession.js"),
