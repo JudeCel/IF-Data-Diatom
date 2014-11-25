@@ -16,7 +16,7 @@ function getSessions(accountId) {
     INNER JOIN session_staff ss ON s.id = ss.session_id \
     INNER JOIN users u ON ss.user_id = u.id \
     WHERE s.accountId = ? \
-    ss.type_id = 2 \
+    AND ss.type_id = 2 \
     AND s.deleted IS NULL";
  
 	return Q.nfcall(db.query, sql, [accountId]);
