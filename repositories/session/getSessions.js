@@ -7,6 +7,7 @@ function getSessions(accountId) {
         s.name, \
         DATE_FORMAT(s.start_time,'%d/%m/%Y') AS start_time, \
         DATE_FORMAT(s.end_time,'%d/%m/%Y') AS end_time, \
+        s.updated as modified, \
         s.status_id, \
         u.name_last, \
         u.name_first, \
