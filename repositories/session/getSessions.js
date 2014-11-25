@@ -2,7 +2,7 @@
 var db = require('if-data').db;
 var Q = require('q');
 
-function getSessionDataForGrid(params) {
+function getSessions(accountId) {
 	var	sql = "SELECT \
         s.name, \
         DATE_FORMAT(s.start_time,'%d/%m/%Y') AS start_time, \
@@ -15,9 +15,11 @@ function getSessionDataForGrid(params) {
     FROM sessions s \
     INNER JOIN session_staff ss ON s.id = ss.session_id \
     INNER JOIN users u ON ss.user_id = u.id \
-    WHERE ss.type_id = 2 AND s.deleted IS  NULL";
+    WHERE s.accountId = ? \
+    ss.type_id = 2 \
+    AND s.deleted IS NULL";
  
-	return Q.nfcall(db.query, sql, [params.companyId]);
+	return Q.nfcall(db.query, sql, [accountId]);
 }
 
-module.exports = getSessionDataForGrid;
+module.exports = getSessions;
