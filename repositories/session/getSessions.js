@@ -13,12 +13,10 @@ function getSessions(accountId) {
         s.id AS id, \
         CONCAT(u.name_first, ' ', u.name_last) as facilitator \
     FROM sessions s \
-    INNER JOIN session_staff ss ON s.id = ss.session_id \
-    INNER JOIN users u ON ss.user_id = u.id \
+    LEFT JOIN users u ON u.id = s.facilitatorId \
     WHERE s.accountId = ? \
-    AND ss.type_id = 2 \
     AND s.deleted IS NULL";
- 
+
 	return Q.nfcall(db.query, sql, [accountId]);
 }
 
