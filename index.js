@@ -29,6 +29,8 @@ module.exports.repositories = {
     createSession: require("./repositories/session/createSession.js"),
     createSessionStaff: require("./repositories/session/createSessionStaff.js"),
     getSession: require("./repositories/session/getSession.js"),
+    getSessionAndTopics: require("./repositories/session/getSessionAndTopics.js"),
+
     getSessionPreferences: require("./repositories/session/getSessionPreferences.js"),
     getSessionStaffUserIds: require("./repositories/session/getSessionStaffUserIds.js"),
     getSessionDataForGrid: require("./repositories/session/getSessionDataForGrid.js"),
