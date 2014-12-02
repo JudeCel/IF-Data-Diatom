@@ -82,6 +82,7 @@ module.exports.repositories = {
 
     updateUser: require("./repositories/user/updateUser.js"),
     getUser: require("./repositories/user/getUser.js"),
+    getUsersList: require("./repositories/user/getUsersList.js"),
     getCountries: require("./repositories/user/getCountries.js"),
     
     createLog: require("./repositories/log/createLog.js"),
