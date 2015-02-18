@@ -30,11 +30,11 @@ module.exports.repositories = {
     createSessionStaff: require("./repositories/session/createSessionStaff.js"),
     getSession: require("./repositories/session/getSession.js"),
     getSessionAndTopics: require("./repositories/session/getSessionAndTopics.js"),
-
+    updateSession: require("./repositories/session/updateSession.js"),
     getSessionPreferences: require("./repositories/session/getSessionPreferences.js"),
     getSessionStaffUserIds: require("./repositories/session/getSessionStaffUserIds.js"),
     getSessionDataForGrid: require("./repositories/session/getSessionDataForGrid.js"),
-	getSessions: require("./repositories/session/getSessions.js"),
+    getSessions: require("./repositories/session/getSessions.js"),
     getSessionDataForGridByUser: require("./repositories/session/getSessionDataForGridByUser.js"),
     getSessionMod: require("./repositories/session/getSessionMod.js"),
     deleteSession: require("./repositories/session/deleteSession.js"),
@@ -62,13 +62,13 @@ module.exports.repositories = {
     updateResources: require("./repositories/resource/updateResources.js"),
     deleteUserTmpResources: require("./repositories/resource/deleteUserTmpResources.js"),
 
-	getTopic: require("./repositories/topic/getTopic.js"),
+    getTopic: require("./repositories/topic/getTopic.js"),
     createTopic: require("./repositories/topic/createTopic.js"),
     getTopics: require("./repositories/topic/getTopics.js"),
-	getGalleryTopics: require("./repositories/topic/getGalleryTopics.js"),
-	getGallerySessionsPerTopic: require("./repositories/topic/getGallerySessionsPerTopic.js"),
-	getGallery: require("./repositories/topic/getGallery.js"),
-	updateTopic: require("./repositories/topic/updateTopic.js"),
+    getGalleryTopics: require("./repositories/topic/getGalleryTopics.js"),
+    getGallerySessionsPerTopic: require("./repositories/topic/getGallerySessionsPerTopic.js"),
+    getGallery: require("./repositories/topic/getGallery.js"),
+    updateTopic: require("./repositories/topic/updateTopic.js"),
 
     getUserLogin: require("./repositories/userLogin/getUserLogin.js"),
     getUserLogin_byPassword: require("./repositories/userLogin/getUserLogin_byPassword.js"),
@@ -84,7 +84,7 @@ module.exports.repositories = {
     getUser: require("./repositories/user/getUser.js"),
     getUsersList: require("./repositories/user/getUsersList.js"),
     getCountries: require("./repositories/user/getCountries.js"),
-    
+
     createLog: require("./repositories/log/createLog.js"),
 
     createVote: require("./repositories/vote/createVote.js"),
@@ -94,6 +94,6 @@ module.exports.repositories = {
     createUserVotes: require("./repositories/vote/createUserVotes.js"),
     getUserVotes: require("./repositories/vote/getUserVotes.js"),
 
-	emailExists: require("./repositories/user/emaiLExists.js"),
-	addUsers: require("./repositories/user/addUsers.js")
+    emailExists: require("./repositories/user/emaiLExists.js"),
+    addUsers: require("./repositories/user/addUsers.js")
 };
